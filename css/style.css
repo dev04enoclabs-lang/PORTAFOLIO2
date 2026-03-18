@@ -1,0 +1,202 @@
+body {
+    background-color: #04062e;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #cecebf;
+    line-height: 1.1;
+    margin: 12%;
+}
+
+.icono {
+    width: 10px;
+}
+
+/*-----------navegador-----------*/
+
+.container-title {
+    background-color: #036a61;
+    border: 1px solid #036a61;
+    border-radius: 8px;
+    padding: 1%;
+    width: 60;
+    margin: 0px;
+}
+
+.menu {
+    text-align: end;
+    width: 100%;
+    display: flex;
+}
+
+#nav1,
+#nav2,
+#nav3,
+#nav4 {
+    text-decoration: none;
+    color: #FFFFF0;
+    padding-right: 10px;
+    font-weight: 600;
+    font-size: 14px;
+
+}
+
+/*el .hover hace que cunado pases en mouse se marque de otro color o estilo */
+#nav1:hover {
+    color: #09c17e;
+}
+
+#nav2:hover {
+    color: #09c17e;
+}
+
+#nav3:hover {
+    color: #09c17e;
+}
+
+#nav4:hover {
+    color: #09c17e;
+}
+
+/*=============================================================================*/
+#logo {
+    margin-right: auto;
+    text-decoration: none;
+    height: 45px;
+    display: flex;
+    border-radius: 50%;
+}
+
+/*cuerpo*/
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 75px;
+    margin: 10px;
+}
+
+.card {
+    background-color: #036a61;
+    border: 1px solid #036a61;
+    border-radius: 30px;
+    padding: 1%;
+    width: 60;
+}
+
+h2 {
+    color: #FFFFF0;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+h4 {
+    color: #c15909;
+}
+
+p {
+    color: #cecebf;
+}
+
+.html {
+    color: orange;
+    text-decoration: none;
+
+}
+
+.css {
+    color: rgb(1, 161, 254);
+    text-decoration: none;
+
+}
+
+.javaScript {
+    color: hsl(55, 100%, 50%);
+    text-decoration: none;
+
+}
+
+.curTer {
+    color: #05e709;
+    text-decoration: none;
+
+}
+
+.curhaci {
+    color: rgb(242, 254, 0);
+    text-decoration: none;
+
+}
+
+footer {
+    text-align: center;
+    color: orangered;
+}
+
+.contacto {
+    text-align: center;
+    width: 500px;
+    color: #FFFFF0;
+
+}
+
+/* Contenedor general de la galería */
+.item-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 10px auto;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.overlay {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.item-container:hover .image {
+    opacity: 0.4;
+}
+
+.item-container:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    background-color: #036a61;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+    border-radius: 8px;
+    white-space: nowrap;
+}
+
+.imgProyect {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.button-star {
+    background-color: #0bd223;
+    border: 1% solid #ffffff;
+    border-radius: 8cap;
+    padding: 1%;
+    height: 40%;
+    width: 40%;
+    text-align: center;
+    text-decoration: none;
+
+}
