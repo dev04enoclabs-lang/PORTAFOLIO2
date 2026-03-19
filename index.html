@@ -15,25 +15,27 @@
         <header>
             <div class="container-title">
                 <nav class="menu">
-                    <a id="logo" href="#"><img src="img/jach.png" alt="logo de mi pagina"></a>
+                    <a id="logo" href="#"><img src="img/jach.png" alt="Logo"></a>
                     <div class="nav-links">
                         <a class="button" href="#quienSoy">¿Quién Soy?</a>
+                        <a class="button" href="#Proyectos">Proyectos</a>
                         <a class="button" href="#MisHabilidades">Habilidades</a>
                         <a class="button" href="#cursos">Cursos</a>
-                        <a class="button" href="#contacto">Comunícate</a>
+                        <a class="button" href="#contacto">Mi Contacto</a>
                     </div>
                 </nav>
             </div>
         </header>
 
         <main class="title">
-            <h1>Portafolio de Trabajo</h1>
+            <button id="elBoton">rojo</button>
+            <button id="elBoton1">blanco</button>
+            <h1 id="elTitulo">Portafolio de Trabajo</h1>
         </main>
 
         <section id="quienSoy">
-            <h2 class="card">¿Quién Soy?</h2>
-
-            <div class="card-profile mb-3">
+            <h2 class="card-header">¿Quién Soy?</h2>
+            <div class="card-profile">
                 <div class="card-body-img">
                     <img src="img/img_usuario.png" alt="Jesús Alberto Cruz Hernández" class="card-img-top-profile" />
                 </div>
@@ -41,21 +43,16 @@
                     <h5 class="card-title-profile">Jesús Alberto Cruz Hernández</h5>
                     <p class="card-text-profile">
                         Me presento, me llamo <strong>Jesús Alberto Cruz Hernández</strong>. Soy un joven de 19 años de
-                        edad,
-                        cuento con el nivel académico media superior, salí graduado con la carrera como
-                        <strong>Técnico en Programación</strong>. En el transcurso de mi ciclo escolar, llegué a ver
-                        temas
-                        de pseudocódigo, access, c++, la estructura de HTML y el uso de CSS, y un poco de JavaScript e
-                        incluso me pusieron hacer un proyecto usando html y css sobre la descripciòn de un compañero de
-                        gustos, disgustos y sus carateristicas.
+                        edad, técnico en programación. Durante mi formación he trabajado con C++, HTML, CSS y
+                        JavaScript, desarrollando proyectos integrales de software y web.
                     </p>
                 </div>
             </div>
         </section>
 
         <section id="MisHabilidades">
-            <h2 class="card">Mis Habilidades</h2>
-            <p id="cunetoHab">Cuento con habilidades para desarrollo en páginas web como:</p>
+            <h2 class="card-header">Mis Habilidades</h2>
+            <p class="proyectosCenter">Cuento con habilidades para desarrollo en páginas web como:</p>
             <ul class="skills-list">
                 <li class="html">HTML</li>
                 <li class="css">CSS</li>
@@ -64,62 +61,78 @@
         </section>
 
         <section id="Proyectos">
-            <h2 class="card">Proyectos</h2>
-            <p class="proyectosCenter">Estos son unos de los Proyectos en los que trabaje en mi transcurso que llevo de
+            <h2 class="card-header">Proyectos</h2>
+            <p class="proyectosCenter">Estos son algunos de los proyectos en los que trabajé durante mi trayectoria como
                 desarrollador web:</p>
-            <div class="imgProyect">
 
-                <div class="project-item">
-                    <a href="https://aucome.net/" target="_blank" class="item-container">
-                        <img src="img/aucome.png" alt="Proyecto 1" class="image">
-                        <div class="overlay">
-                            <div class="text">Ver Proyecto</div>
-                        </div>
-                    </a>
-                    <div class="project-info">
-                        <h3>Aucome Network:</h3>
-                        <p>Desarrollo de interfaz corporativa y optimización de navegación para servicios tecnológicos
-                            para sistemas de pagos inteligentes usando html y css.
+            <div class="imgproyect">
+                <div class="project-item card">
+                    <div class="card-body">
+                        <a href="https://aucome.net/" target="_blank" class="item-container">
+                            <img src="img/aucome.png" alt="Aucome Network" class="image">
+                            <div class="overlay">
+                                <div class="text">Ver Proyecto</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-info card-body">
+                        <h5 class="card-title">Aucome Network:</h5>
+                        <p class="card-text">Desarrollo de interfaz corporativa y optimización de navegación para
+                            servicios tecnológicos.</p>
+                    </div>
+                </div>
+
+                <div class="project-item card">
+                    <div class="card-body">
+                        <a href="https://bimbo.aucome.net/" target="_blank" class="item-container">
+                            <img src="img/bimbo.png" alt="Portal Bimbo" class="image">
+                            <div class="overlay">
+                                <div class="text">Ver Proyecto</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-info card-body">
+                        <h5 class="card-title">Portal Administrativo Bimbo:</h5>
+                        <p class="card-text">Gestión de productos y vinculación con dispositivos mediante PHP, Laravel y
+                            APIs.</p>
+                    </div>
+                </div>
+
+                <div class="project-item card">
+                    <div class="card-body">
+                        <a href="http://localhost/HSJ-WEB-Restaurante/" target="_blank" class="item-container">
+                            <img src="img/restaurante.png" alt="HSJ Restaurante" class="image">
+                            <div class="overlay">
+                                <div class="text">Ver Proyecto</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-info card-body">
+                        <h5 class="card-title">HSJ Restaurante:</h5>
+                        <p class="card-text">Sitio web colaborativo para restaurante con gestión de base de datos MySQL.
                         </p>
                     </div>
                 </div>
-
-                <div class="project-item">
-                    <a href="https://dev.bimbo.enoclabs.com/" target="_blank" class="item-container">
-                        <img src="img/bimbo.png" alt="Proyecto 2" class="image">
-                        <div class="overlay">
-                            <div class="text">Ver Proyecto</div>
-                        </div>
-                    </a>
-                    <div class="project-info">
-                        <h3>Portal Administrativo Bimbo:</h3>
-                        <p>Implementación de sistema de gestión de productos, marcas, Centros de Ventas, vinculacion con
-                            dispositivos inteligentes usando htmml, css, js, php, apis, laravel, uso de base de datos.
+                <div class="project-item card">
+                    <div class="card-body">
+                        <a href="http://localhost/HSJ-Admin/" target="_blank" class="item-container">
+                            <img src="img/HSJ.png" alt="HSJ Restaurante" class="image">
+                            <div class="overlay">
+                                <div class="text">Ver Proyecto</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-info card-body">
+                        <h5 class="card-title">HSJ :</h5>
+                        <p class="card-text">Sitio web colaborativo para restaurante con gestión de base de datos MySQL.
                         </p>
                     </div>
                 </div>
-
-                <div class="project-item">
-                    <a href="#" target="_blank" class="item-container">
-                        <img src="img/proyecto1.png" alt="Proyecto 3" class="image">
-                        <div class="overlay">
-                            <div class="text">Ver Proyecto</div>
-                        </div>
-                    </a>
-                    <div class="project-info">
-                        <h3>aun falta:</h3>
-                        <p>.....</p>
-                    </div>
-                </div>
-
             </div>
         </section>
 
         <section id="cursos">
-            <h2 class="card">Cursos</h2>
-            <p>Como desarrollador web, soy consciente de que siempre hay espacio para mejorar y obtener mejores
-                oportunidades. No solo me enfoco en web, también aspiro al desarrollo de software general.</p>
-
+            <h2 class="card-header">Cursos</h2>
             <div class="cursos-grid">
                 <div class="cursos-box">
                     <h4>Cursos terminados:</h4>
@@ -132,7 +145,7 @@
                     <h4>En progreso:</h4>
                     <ul>
                         <li><a class="curhaci" href="#">Kotlin</a></li>
-                        <li><a class="curhaci" href="#">php</a></li>
+                        <li><a class="curhaci" href="#">PHP</a></li>
                         <li><a class="curhaci" href="#">Base de Datos</a></li>
                     </ul>
                 </div>
@@ -140,21 +153,19 @@
         </section>
 
         <section id="contacto" class="container-contacto">
-            <h2 class="card">Comunícate</h2>
+            <h2 class="card-header">MI Contacto</h2>
             <div class="contacto-links">
-                <p>Correo electronico: <a href="mailto:cruzjesusalberto312@gmail.com"
-                        target="_blank">cruzjesusalberto312@gmail.com</a></p>
-                <p>Teléfono: <a href="tel:+7721043761" target="_blankç">7721043761</a></p>
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/jes%C3%BAs-alberto-cruz-hern%C3%A1ndez-650307391/"
-                        target="_blank">
-                        Jesús Alberto Cruz Hernández</a></p>
-                <p>GitHub: <a href="#">GitHub</a></p>
-                <!--<a href="#">Ubicación</a>-->
+                <p>Correo electrónico: <a href="mailto:cruzjesusalberto312@gmail.com"
+                        target="_blank">cruzjesusalberto312@gmail.com</a></p><br>
+                <p>Teléfono: <a href="tel:+7721043761" target="_blank">7721043761</a></p><br>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/jesús-alberto-cruz-hernández-650307391/"
+                        target="_blank">Jesús Alberto Cruz Hernández</a></p><br>
+                <p>GitHub: <a href="https://github.com/dev04enoclabs-lang" target="_blank">Jesus_312</a></p><br>
             </div>
         </section>
     </div>
-
     <footer>© 2026 - Portafolio de Presentación</footer>
 </body>
+<script src="js/script.js"></script>
 
 </html>
