@@ -1,12 +1,13 @@
 /* =========================================
-   1. VARIABLES DE DISEÑO Y RESET
+   1. VARIABLES Y RESET
    ========================================= */
 :root {
     --primary: #036a61;
     --accent: #09c17e;
-    --bg-dark: #04062e;
+    --bg-dark: #0B132B;
     --text-color: #cecebf;
     --white: #ffffff;
+    --button: #4b0cfa;
 }
 
 * {
@@ -20,18 +21,16 @@ body {
     font-family: 'Inter', sans-serif;
     color: var(--text-color);
     line-height: 1.6;
-    padding-bottom: 50px;
 }
 
 .container-text {
-    max-width: 1000px;
-    /* Centra el contenido en pantallas grandes */
+    max-width: 1100px;
     margin: 0 auto;
     padding: 20px;
 }
 
 /* =========================================
-   2. NAVEGADOR (HEADER)
+   2. HEADER Y NAVEGACIÓN
    ========================================= */
 header {
     position: sticky;
@@ -40,11 +39,10 @@ header {
 }
 
 .container-title {
-    background-color: rgba(3, 106, 97, 0.95);
+    background-color: var(--primary);
     border-radius: 12px;
     padding: 10px 20px;
     backdrop-filter: blur(5px);
-    color: #89ecdf;
 }
 
 .menu {
@@ -56,7 +54,6 @@ header {
 #logo img {
     height: 45px;
     border-radius: 50%;
-    transition: 0.3s;
 }
 
 .nav-links {
@@ -69,7 +66,7 @@ header {
     color: var(--white);
     font-weight: 600;
     font-size: 14px;
-    transition: color 0.3s ease;
+    transition: 0.3s;
 }
 
 .button:hover {
@@ -77,27 +74,23 @@ header {
 }
 
 /* =========================================
-   3. CUERPO Y TÍTULOS
+   3. TÍTULOS Y SECCIONES
    ========================================= */
 h1 {
     color: white;
     text-align: center;
-    font-size: clamp(2.5rem, 10vw, 4.5rem);
+    font-size: clamp(2.5rem, 10vw, 4rem);
     margin: 60px 0;
     font-weight: 800;
 }
 
-.cunetoHab {
-    text-align: 20px;
-}
-
-.card {
+.card-header {
     background-color: var(--primary);
     border-radius: 50px;
     padding: 12px;
     color: var(--white);
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-size: 1.5rem;
 }
 
@@ -105,26 +98,20 @@ section {
     margin-bottom: 60px;
 }
 
-p {
-    margin-bottom: 15px;
-    text-align: justify;
+.proyectosCenter {
+    text-align: center;
 }
 
 /* =========================================
-   4. ESTILO DE CARD: QUIÉN SOY (PERFIL)
+   4. PERFIL (QUIÉN SOY)
    ========================================= */
 .card-profile {
     background-color: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(3, 106, 97, 0.3);
     border-radius: 15px;
-    overflow: hidden;
-    margin-top: 20px;
     display: flex;
     flex-direction: column;
-}
-
-.mb-3 {
-    margin-bottom: 1rem;
+    overflow: hidden;
 }
 
 .card-body-img {
@@ -135,43 +122,27 @@ p {
 }
 
 .card-img-top-profile {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     object-fit: cover;
     border-radius: 50%;
     border: 4px solid var(--white);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
 .card-body-text {
     padding: 30px;
-    background-color: rgba(4, 6, 46, 0.6);
 }
 
 .card-title-profile {
     color: var(--accent);
     font-size: 1.8rem;
     margin-bottom: 15px;
-    text-align: center;
 }
 
-.card-text-profile {
-    color: var(--text-color);
-    font-size: 1.1rem;
-    line-height: 1.8;
-    text-align: justify;
-}
-
-/* Ajuste para pantallas grandes: Imagen a la izquierda, texto a la derecha */
 @media (min-width: 768px) {
     .card-profile {
         flex-direction: row;
         align-items: center;
-    }
-
-    .card-body-img {
-        background: transparent;
-        padding: 40px;
     }
 }
 
@@ -184,6 +155,7 @@ p {
     gap: 20px;
     justify-content: center;
     font-weight: bold;
+    margin-top: 20px;
 }
 
 .html {
@@ -199,30 +171,39 @@ p {
 }
 
 /* =========================================
-   6. PROYECTOS (GRID Y CARDS)
+   6. PROYECTOS (GRID CARDS)
    ========================================= */
-.proyectosCenter {
-    text-align: center;
-}
-
-.imgProyect {
+.imgproyect {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    align-items: start;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columnas fijas en pantalla grande */
+    gap: 25px;
+    margin-top: 30px;
 }
 
-.project-item {
+.card {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(3, 106, 97, 0.3);
+    border-radius: 15px;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent);
+}
+
+.card-body {
+    padding: 15px;
 }
 
 .item-container {
     position: relative;
-    border-radius: 15px;
+    border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     display: block;
 }
 
@@ -230,17 +211,16 @@ p {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    transition: 0.5s ease;
     display: block;
 }
 
 .overlay {
     position: absolute;
     top: 0;
-    bottom: 0;
     left: 0;
-    right: 0;
-    background: rgba(3, 106, 97, 0.8);
+    width: 100%;
+    height: 100%;
+    background: rgba(3, 106, 97, 0.85);
     opacity: 0;
     display: flex;
     justify-content: center;
@@ -248,39 +228,40 @@ p {
     transition: 0.5s ease;
 }
 
-.item-container:hover .image {
-    transform: scale(1.1);
-    filter: blur(2px);
-}
-
 .item-container:hover .overlay {
-    opacity: 1;
+    opacity: 0.6;
 }
 
 .text {
     color: white;
-    font-weight: bold;
     border: 2px solid white;
-    padding: 10px 20px;
+    padding: 8px 16px;
     border-radius: 5px;
+    font-weight: bold;
 }
 
-.project-info {
-    font-size: 16px;
-    padding: 0 5px;
+.card-title {
+    color: var(--accent);
+    font-size: 1.15rem;
+    margin-bottom: 10px;
 }
 
-.project-info h3 {
-    color: var(--white);
-    margin-bottom: 8px;
-    font-size: 1.2rem;
-}
-
-.project-info p {
+.card-text {
     font-size: 0.9rem;
-    color: var(--text-color);
-    text-align: left;
-    margin-bottom: 0;
+    text-align: justify;
+}
+
+/* RESPONSIVE PROYECTOS */
+@media (max-width: 992px) {
+    .imgproyect {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .imgproyect {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* =========================================
@@ -291,6 +272,7 @@ p {
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 20px;
+    margin-top: 20px;
 }
 
 h4 {
@@ -309,7 +291,7 @@ h4 {
 }
 
 .container-contacto {
-    text-align: center;
+    text-align: flex;
 }
 
 .contacto-links a {
@@ -317,16 +299,11 @@ h4 {
     text-decoration: none;
 }
 
-.social-grid {
-    margin-top: 15px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
 footer {
     text-align: center;
-    color: #555;
-    font-size: 0.8rem;
+    color: #6e6d6d;
+    font-size: 0.9rem;
     margin-top: 40px;
 }
+
+/*botton para el tema de body*/
