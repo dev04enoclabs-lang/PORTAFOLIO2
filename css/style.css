@@ -307,3 +307,28 @@ footer {
 }
 
 /*botton para el tema de body*/
+#btnMorado {
+    position: fixed;
+    top: 120px;    /* Distancia desde arriba */
+    right: 20px;   /* ¡Aquí lo mandamos a la derecha! */
+    padding: 15px 25px;
+    background-color: #4b0cfa; /* Tu color de variable --button */
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 2000; /* Para que siempre esté por encima de todo */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+#btnMorado:hover {
+    transform: scale(1.1); /* Efecto de aumento al pasar el mouse */
+}
+
+/* LA CLASE QUE CAMBIA EL COLOR DEL FONDO */
+body.tema-morado {
+    background-color: #1a0533 !important; /* Morado oscuro */
+    transition: background-color 0.6s ease;
+}
