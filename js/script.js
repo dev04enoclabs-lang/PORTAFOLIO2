@@ -13,12 +13,9 @@ elBoton1.addEventListener("click", () => {
 // 1. Referencia al botón
 const btnMorado = document.getElementById("btnMorado");
 
-// 2. Evento de clic
 btnMorado.addEventListener("click", () => {
-    // 'toggle' pone la clase si no está, y la quita si ya está
     document.body.classList.toggle("tema-morado");
 
-    // 3. Opcional: Cambiar el texto del botón al hacer clic
     if (document.body.classList.contains("tema-morado")) {
         btnMorado.innerText = "MODO OSCURO";
     } else {
