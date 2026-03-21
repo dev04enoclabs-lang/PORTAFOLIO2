@@ -6,7 +6,7 @@ const elBoton1 = document.getElementById("elBoton1");
 elBoton.addEventListener("click", () => {
     elTitulo.style.color = "red";
 });
-elBoton1.addEventListener("click", () => {
+elBoton1.addEventListenerF("click", () => {
     elTitulo.style.color = "white";
 });*/
 
